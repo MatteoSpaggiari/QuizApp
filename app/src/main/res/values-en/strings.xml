@@ -1,0 +1,25 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz App</string>
+    <string name="fifth_question">5) Choose pairs of notes that have a range of one tone:</string>
+    <string name="first_answer_fifth_question">C-D</string>
+    <string name="first_answer_second_question">Yes</string>
+    <string name="first_answer_sixth_question">Semitone</string>
+    <string name="first_question">1) How many are the musical notes (including the altered ones)?</string>
+    <string name="fourth_answer_fifth_question">E-F#</string>
+    <string name="fourth_question">4) How many strings has a violin (type the number)?</string>
+    <string name="second_answer_fifth_question">E-F</string>
+    <string name="second_answer_second_question">No</string>
+    <string name="second_answer_sixth_question">Tone</string>
+    <string name="second_question">2) Do the E# and F notes sound the same?</string>
+    <string name="sixth_question">6) What is the name of the smaller interval between two notes?</string>
+    <string name="third_answer_fifth_question">A-C</string>
+    <string name="third_question">3) How many strings can a guitar have?</string>
+    <string name="title">Challenge yourself and answer all the questions</string>
+    <string name="submit_button">Submit</string>
+    <string name="right_answers">Right answers:</string>
+    <string name="wrong_answers">Wrong answers:</string>
+    <string name="try_again">Try again!</string>
+    <string name="compliments">Compliments! Your answers are all correct.</string>
+    <string name="unanswered_questions">Unanswered questions:</string>
+</resources>

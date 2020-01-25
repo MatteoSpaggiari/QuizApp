@@ -1,0 +1,240 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    style="@style/AppTheme.Body">
+
+    <!-- IMAGE -->
+    <!-- Thanks https://www.lagenziadiviaggi.it/torna-la-musica-classica-al-volo-a-fiumicino/ for the image -->
+    <ImageView
+        android:id="@+id/header_image_view"
+        android:src="@drawable/quiz_app"
+        android:contentDescription="Header Image"
+        style="@style/AppTheme.Body.ImageHeader" />
+
+    <ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:fillViewport="true">
+
+        <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            xmlns:tools="http://schemas.android.com/tools"
+            style="@style/AppTheme.Body.Constraint"
+            tools:context=".MainActivity">
+
+            <!-- TITLE -->
+            <TextView
+                android:id="@+id/title"
+                style="@style/AppTheme.Body.Title"
+                android:text="@string/title"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <!-- FIRST QUESTION -->
+            <TextView
+                android:id="@+id/first_question"
+                style="@style/AppTheme.Body.Questions"
+                android:text="@string/first_question"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/title" />
+
+            <RadioGroup
+                android:id="@+id/answers_first_question"
+                style="@style/AppTheme.Body.RadioGroup"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/first_question">
+
+                <RadioButton
+                    android:id="@+id/answer_seven_first_question"
+                    style="@style/AppTheme.Body.RadioButton"
+                    android:text="7" />
+
+                <RadioButton
+                    android:id="@+id/answer_ten_first_question"
+                    style="@style/AppTheme.Body.RadioButton"
+                    android:text="10" />
+
+                <RadioButton
+                    android:id="@+id/answer_twelve_first_question"
+                    style="@style/AppTheme.Body.RadioButton"
+                    android:text="12" />
+
+                <RadioButton
+                    android:id="@+id/answer_fifteen_first_question"
+                    style="@style/AppTheme.Body.RadioButton"
+                    android:text="15" />
+            </RadioGroup>
+
+            <!-- SECOND QUESTION -->
+            <TextView
+                android:id="@+id/second_question"
+                style="@style/AppTheme.Body.Questions"
+                android:text="@string/second_question"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/answers_first_question" />
+
+            <RadioGroup
+                android:id="@+id/answers_second_question"
+                style="@style/AppTheme.Body.RadioGroup"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/second_question">
+
+                <RadioButton
+                    android:id="@+id/answer_yes_second_question"
+                    style="@style/AppTheme.Body.RadioButton"
+                    android:text="@string/first_answer_second_question" />
+
+                <RadioButton
+                    android:id="@+id/answer_no_second_question"
+                    style="@style/AppTheme.Body.RadioButton"
+                    android:text="@string/second_answer_second_question" />
+            </RadioGroup>
+
+            <!-- THIRD QUESTION -->
+            <TextView
+                android:id="@+id/third_question"
+                style="@style/AppTheme.Body.Questions"
+                android:text="@string/third_question"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/answers_second_question" />
+
+            <CheckBox
+                android:id="@+id/answer_five_third_question"
+                style="@style/AppTheme.Body.CheckBox"
+                android:text="5"
+                app:layout_constraintEnd_toStartOf="@+id/answer_twelve_third_question"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/third_question" />
+
+            <CheckBox
+                android:id="@+id/answer_twelve_third_question"
+                style="@style/AppTheme.Body.CheckBox"
+                android:text="12"
+                app:layout_constraintEnd_toStartOf="@+id/answer_six_third_question"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/answer_five_third_question"
+                app:layout_constraintTop_toBottomOf="@id/third_question" />
+
+            <CheckBox
+                android:id="@+id/answer_six_third_question"
+                style="@style/AppTheme.Body.CheckBox"
+                android:text="6"
+                app:layout_constraintEnd_toStartOf="@+id/answer_nine_third_question"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/answer_twelve_third_question"
+                app:layout_constraintTop_toBottomOf="@id/third_question" />
+
+            <CheckBox
+                android:id="@+id/answer_nine_third_question"
+                style="@style/AppTheme.Body.CheckBox"
+                android:text="9"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/answer_six_third_question"
+                app:layout_constraintTop_toBottomOf="@id/third_question" />
+
+            <!-- FOURTH QUESTION -->
+            <TextView
+                android:id="@+id/fourth_question"
+                style="@style/AppTheme.Body.Questions"
+                android:text="@string/fourth_question"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/answer_five_third_question" />
+
+            <EditText
+                android:id="@+id/answer_fourth_question"
+                style="@style/AppTheme.Body.EditText"
+                android:hint="10"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fourth_question" />
+
+            <!-- FIFTH QUESTION -->
+            <TextView
+                android:id="@+id/fifth_question"
+                style="@style/AppTheme.Body.Questions"
+                android:text="@string/fifth_question"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/answer_fourth_question" />
+
+            <CheckBox
+                android:id="@+id/first_answer_fifth_question"
+                style="@style/AppTheme.Body.CheckBox"
+                android:text="@string/first_answer_fifth_question"
+                app:layout_constraintEnd_toStartOf="@+id/second_answer_fifth_question"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/fifth_question" />
+
+            <CheckBox
+                android:id="@+id/second_answer_fifth_question"
+                style="@style/AppTheme.Body.CheckBox"
+                android:text="@string/second_answer_fifth_question"
+                app:layout_constraintEnd_toStartOf="@+id/third_answer_fifth_question"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/first_answer_fifth_question"
+                app:layout_constraintTop_toBottomOf="@id/fifth_question" />
+
+            <CheckBox
+                android:id="@+id/third_answer_fifth_question"
+                style="@style/AppTheme.Body.CheckBox"
+                android:text="@string/third_answer_fifth_question"
+                app:layout_constraintEnd_toStartOf="@+id/fourth_answer_fifth_question"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/second_answer_fifth_question"
+                app:layout_constraintTop_toBottomOf="@id/fifth_question" />
+
+            <CheckBox
+                android:id="@+id/fourth_answer_fifth_question"
+                style="@style/AppTheme.Body.CheckBox"
+                android:text="@string/fourth_answer_fifth_question"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/third_answer_fifth_question"
+                app:layout_constraintTop_toBottomOf="@id/fifth_question" />
+
+            <!-- SIXTH QUESTION -->
+            <TextView
+                android:id="@+id/sixth_question"
+                style="@style/AppTheme.Body.Questions"
+                android:text="@string/sixth_question"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/first_answer_fifth_question" />
+
+            <RadioGroup
+                android:id="@+id/answers_sixth_question"
+                style="@style/AppTheme.Body.RadioGroup"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/sixth_question">
+
+                <RadioButton
+                    android:id="@+id/answer_semitone_sixth_question"
+                    style="@style/AppTheme.Body.RadioButton"
+                    android:text="@string/first_answer_sixth_question" />
+
+                <RadioButton
+                    android:id="@+id/answer_tone_sixth_question"
+                    style="@style/AppTheme.Body.RadioButton"
+                    android:text="@string/second_answer_sixth_question" />
+            </RadioGroup>
+
+            <!-- SUBMIT BUTTON -->
+            <Button
+                android:id="@+id/submit_button"
+                app:layout_constraintLeft_toLeftOf="parent"
+                app:layout_constraintRight_toRightOf="parent"
+                app:layout_constraintTop_toBottomOf="@id/answers_sixth_question"
+                android:text="@string/submit_button"
+                style="@style/AppTheme.Body.SubmitButton" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+    </ScrollView>
+</LinearLayout>
+

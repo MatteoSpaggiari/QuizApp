@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Quiz App</string>
+    <!-- Title -->
+    <string name="title">Sfida te stesso e rispondi a tutte le domande</string>
+    <!-- First question and answers -->
+    <string name="first_question">1) Quante sono le note musicali (incluse le alterate)?</string>
+    <!-- Second question and answers -->
+    <string name="second_question">2) Le note MI# e FA hanno lo stesso suono?</string>
+    <string name="first_answer_second_question">Si</string>
+    <string name="second_answer_second_question">No</string>
+    <!-- Third question and answers -->
+    <string name="third_question">3) Quante corde può avere una chitarra?</string>
+    <!-- Fourth question and answers -->
+    <string name="fourth_question">4) Quante corde ha un violino (digita il numero)?</string>
+    <!-- Fifth question and answers -->
+    <string name="fifth_question">5) Scegli le coppie di note che hanno un intervallo di un tono:</string>
+    <string name="first_answer_fifth_question">Do-Re</string>
+    <string name="second_answer_fifth_question">Mi-Fa</string>
+    <string name="third_answer_fifth_question">La-Do</string>
+    <string name="fourth_answer_fifth_question">Mi-Fa#</string>
+    <!-- Sixth question and answers -->
+    <string name="sixth_question">6) Come si chiama l\'intervallo più piccolo tra due note?</string>
+    <string name="first_answer_sixth_question">Semitono</string>
+    <string name="second_answer_sixth_question">Tono</string>
+    <!-- Submit Button -->
+    <string name="submit_button">Invia</string>
+    <!-- Right answer in the final score -->
+    <string name="right_answers">Risposte corrette:</string>
+    <!-- Wrong answer in the final score -->
+    <string name="wrong_answers">Risposte sbagliate:</string>
+    <!-- Try again -->
+    <string name="try_again">Ritenta!</string>
+    <!-- Compliments -->
+    <string name="compliments">Complimenti! Le tue risposte sono tutte corrette.</string>
+    <string name="unanswered_questions">Domande senza risposta:</string>
+</resources>

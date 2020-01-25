@@ -1,0 +1,92 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+        <!-- Customize your theme here. -->
+        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
+        <item name="colorAccent">@color/colorAccent</item>
+        <item name="android:textColor">@color/textColor</item>
+    </style>
+
+    <!-- Body Container -->
+    <style name="AppTheme.Body">
+        <item name="android:background">@color/backgroundColorBody</item>
+    </style>
+
+    <!-- Body Constraint Container -->
+    <style name="AppTheme.Body.Constraint">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">match_parent</item>
+        <item name="android:paddingTop">24dp</item>
+        <item name="android:paddingBottom">24dp</item>
+    </style>
+
+    <!-- Image Header -->
+    <style name="AppTheme.Body.ImageHeader">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">150dp</item>
+        <item name="android:layout_margin">0dp</item>
+        <item name="android:scaleType">centerCrop</item>
+    </style>
+
+    <!-- Title -->
+    <style name="AppTheme.Body.Title">
+        <item name="android:textAllCaps">true</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+    </style>
+
+    <!-- Questions -->
+    <style name="AppTheme.Body.Questions">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">32dp</item>
+        <item name="android:layout_marginBottom">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <!-- Radio Group -->
+    <style name="AppTheme.Body.RadioGroup">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">8dp</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <!-- Radio Button -->
+    <style name="AppTheme.Body.RadioButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingRight">30dp</item>
+    </style>
+
+    <!-- CheckBox -->
+    <style name="AppTheme.Body.CheckBox">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">8dp</item>
+        <item name="android:paddingRight">8dp</item>
+    </style>
+
+    <!-- Answer EditText -->
+    <style name="AppTheme.Body.EditText">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_marginTop">16dp</item>
+        <item name="android:paddingRight">16dp</item>
+        <item name="android:paddingLeft">16dp</item>
+    </style>
+
+    <!-- Submit Button -->
+    <style name="AppTheme.Body.SubmitButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_margin">32dp</item>
+        <item name="android:textColor">@color/textColorButton</item>
+        <item name="android:background">@color/backgroundColorButton</item>
+        <item name="android:textAllCaps">true</item>
+    </style>
+
+</resources>
